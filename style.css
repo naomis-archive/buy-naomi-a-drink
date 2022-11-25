@@ -1,0 +1,62 @@
+:root {
+  --dark-purple: #3a3240;
+  --dark-blue: #0b0080;
+  --light-purple: #aea8de;
+  --light-blue: #48d1cc;
+  --cursor-normal: url("https://naomi.lgbt/assets/img/cursor.cur");
+  --cursor-pointer: url("https://naomi.lgbt/assets/img/pointer.cur");
+}
+
+html {
+  cursor: var(--cursor-normal), default;
+  margin: 0;
+  background: url("https://cdn.nhcarrigan.com/banner.png") no-repeat top center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: var(--dark-purple);
+  font: "Press Start 2P", Courier, monospace;
+  text-align: center;
+}
+
+body {
+  margin: auto;
+  margin-top: 10px;
+  max-width: 750px;
+  background-color: rgb(174, 168, 222, 0.85);
+  border-radius: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+a {
+  cursor: var(--cursor-pointer), pointer;
+  color: var(--dark-blue);
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.box {
+  background-color: var(--dark-purple);
+  color: var(--light-purple);
+}
+
+.box > a {
+  color: var(--light-blue);
+}
+
+.icon {
+  width: 300px;
+}
